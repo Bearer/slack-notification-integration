@@ -1,53 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Bearer - Framework integration</title>
+    <link rel="stylesheet" type="text/css" href="https://static.bearer.sh/framework-integrations/tabler.css" />
+  </head>
 
-<head>
-  <title>Bearer - Framework integration</title>
-  <link rel="stylesheet" type="text/css" href="https://static.bearer.sh/framework-integrations/tabler.css">
-</head>
+  <body>
+    <div class="page">
+      <div class="page-main">
+        <%= require('html-loader!./header.html') %>
+        <div class="container">
+          <div class="page-header"><h1 class="page-title">Frameworks</h1></div>
+          <div class="card card-aside">
+            <a
+              href="/angular/index.html"
+              class="card-aside-column"
+              style="background-image: url(https://angular.io/assets/images/logos/angular/angular.svg)"
+            ></a>
+            <div class="card-body d-flex flex-column">
+              <h4><a href="/angular/index.html">Angular JS</a></h4>
+              <div class="text-muted">Example of Bearer used within an AngularJS application</div>
+            </div>
+          </div>
+          <div class="card card-aside">
+            <a
+              href="/react/index.html"
+              class="card-aside-column"
+              style="background-image: url(https://static.bearer.sh/framework-integrations/react-icon.svg)"
+            ></a>
+            <div class="card-body d-flex flex-column">
+              <h4><a href="/react/index.html">React JS</a></h4>
+              <div class="text-muted">Example of Bearer used within a ReactJS application</div>
+            </div>
+          </div>
 
-<body>
-  <div class="page">
-    <div class="page-main">
-      <%= require('html-loader!./header.html') %>
-      <div class="container">
-        <div class="page-header">
-          <h1 class="page-title">Frameworks</h1>
-        </div>
-        <div class="card card-aside">
-          <a href="/angular/index.html" class="card-aside-column" style="background-image: url(https://angular.io/assets/images/logos/angular/angular.svg)"></a>
-          <div class="card-body d-flex flex-column">
-            <h4>
-              <a href="/angular/index.html">Angular JS</a>
-              
-            </h4>
-            <div class="text-muted">Example of Bearer used within an AngularJS application</div>
+          <div class="card card-aside">
+            <a
+              href="/vue/index.html"
+              class="card-aside-column"
+              style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg)"
+            ></a>
+            <div class="card-body d-flex flex-column">
+              <h4><a href="/vue/index.html">Vue JS</a></h4>
+              <div class="text-muted">Example of Bearer used within a VueJS application</div>
+            </div>
           </div>
         </div>
-        <div class="card card-aside">
-          <a href="/react/index.html" class="card-aside-column" style="background-image: url(https://static.bearer.sh/framework-integrations/react-icon.svg)"></a>
-          <div class="card-body d-flex flex-column">
-            <h4>
-              <a href="/react/index.html">React JS</a>
-            </h4>
-            <div class="text-muted">Example of Bearer used within a React application</div>
-          </div>
-        </div>
-        <!-- <div class="card card-aside">
-          <a href="/vue/index.html" class="card-aside-column" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg)"></a>
-          <div class="card-body d-flex flex-column">
-            <h4>
-              <a href="/vue/index.html">Vue JS</a>
-            </h4>
-            <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that
-              coconuts migr...</div>
-          </div>
-        </div> -->
       </div>
     </div>
-  </div>
-
-
-</body>
-
+  </body>
 </html>
