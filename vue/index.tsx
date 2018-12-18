@@ -17,24 +17,17 @@ new Vue({
     setupId: setupId
   },
   mounted() {
-    let vue = this.$refs.vue
+    const vue = this.$refs.vue
     // v-on:bearer-6d29c4-share-slack-beta-4-channel-test="saveChannel"
     // v-on:bearer-6d29c4-share-slack-beta-4-channel-channelSaved="saveChannel"
-    vue.addEventListener('bearer|2627b8-slack-sharing|channel|saved', e => {
+    vue.addEventListener('bearer|2627b8-slack-sharing|channel|saved', this.saveChannel)
+  },
+  methods: {
+    saveChannel: e => {
       const {
         detail: { channelId }
       } = e
       console.log('[BEARER]', 'You must keep this reference ', channelId)
-    })
-  },
-  methods: {
-    saveChannel: function(event) {
-      // `this` inside methods points to the Vue instance
-      alert('Hello!')
-      // `event` is the native DOM event
-      if (event) {
-        alert(event.target.tagName)
-      }
     }
   }
 })
