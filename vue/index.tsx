@@ -6,9 +6,6 @@ Vue.config.ignoredElements = [
   'bearer-2627b8-slack-sharing-connect-action',
   'bearer-2627b8-slack-sharing-channel-action',
   'bearer-2627b8-slack-sharing-feature-action'
-  // 'bearer-6d29c4-share-slack-beta-4-connect-action',
-  // 'bearer-6d29c4-share-slack-beta-4-channel-action',
-  // 'bearer-6d29c4-share-slack-beta-4-feature-action'
 ]
 
 new Vue({
