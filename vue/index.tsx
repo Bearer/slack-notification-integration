@@ -1,6 +1,4 @@
 import Vue from 'vue'
-import marked from 'marked'
-import debounce from 'lodash.debounce'
 
 const setupId = 'ae9a79d0-d93a-11e8-aebb-51df6010fd72'
 
@@ -12,23 +10,6 @@ Vue.config.ignoredElements = [
   // 'bearer-6d29c4-share-slack-beta-4-channel-action',
   // 'bearer-6d29c4-share-slack-beta-4-feature-action'
 ]
-
-new Vue({
-  el: '#test',
-  data: {
-    input: '# hello'
-  },
-  computed: {
-    compiledMarkdown: function() {
-      return marked(this.input, { sanitize: true })
-    }
-  },
-  methods: {
-    update: debounce(function(e) {
-      this.input = e.target.value
-    }, 300)
-  }
-})
 
 new Vue({
   el: '#root',
