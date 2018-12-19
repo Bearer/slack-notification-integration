@@ -10,7 +10,8 @@
     "build:app": "webpack --config webpack.config.js",
     "build:angular": "cd angular && npm run ng build -- --prod --baseHref='/angular/' --output-path=../dist/angular",
     "build:react": "webpack --config webpack.config.react.js",
-    "build": "NODE_ENV=production npm run build:app && NODE_ENV=production npm run build:react && NODE_ENV=production npm run build:angular"
+    "build:vue": "webpack --config webpack.config.vue.js",
+    "build": "NODE_ENV=production npm run build:app && NODE_ENV=production npm run build:react && NODE_ENV=production npm run build:angular && NODE_ENV=production npm run build:vue"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.10.3",
@@ -21,12 +22,13 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "ts-loader": "^5.2.2",
-    "typescript": "^3.1.4",
+    "typescript": "^3.1.6",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react-dom": "^16.6.0",
+    "vue": "^2.5.21"
   }
 }
